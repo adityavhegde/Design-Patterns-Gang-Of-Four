@@ -2,7 +2,7 @@
 
 The book was written back in 1994. This is the first book to have named these patterns. At the time the book was written Java was an emerging languaged and C++ and Smalltalk were the popular language. The book makes references to Smalltalk. What I understand about these references is that Smalltalk is a pure OO language.
 
-Smalltalk as a language is kind of 3 things, partly an Operating System of its own. In a sense this reminds me of Erlang VM. Objects in Smalltalk don't have a type and in the sense of Pure OO -- the Objects message and talk to each other. This is not different from the Actor model.
+Smalltalk as a language is kind of 3 things, partly an Operating System of its own. In a sense this reminds me of Erlang VM. Objects in Smalltalk don't have a type and in the sense of Pure OO -- the Objects message and talk to each other. This is not different from the Actor model [2].
 
 Talking about objects as if they are operating system processes. It is important to note that these are programming abstractions, meaning your object is either in the executing stack or page of memory on the heap which is used by the current running process. Even though the authors talk about objects like some sort of process and inter process communication, it's just a programming abstraction and not an operating system construct. Everything finally runs as a process or a group of processes or threads within a process. It is also mentioned at some point that OO in itself is a **design pattern**.
 
@@ -91,7 +91,8 @@ Frameworks: takes mental load off boilerplate.
 4. How can you use objects to handle code pre-conditions and error handling
 
 ## References 
-1. Design Patterns - Elements of Reusable Object Oriented Software 
+1. Design Patterns - Elements of Reusable Object Oriented Software
+2. https://stackoverflow.com/questions/58578030/what-is-the-difference-between-processes-messages-in-erlang-and-objects-messages
 
 ## Authors 
 Aditya Hegde
