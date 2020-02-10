@@ -45,7 +45,50 @@ deal with object relationships
 
 dynamic -- change at runtime 
 
+## OO Concepts 
 
+The main highlights here are 
+
+1. Programing to an Interface and not an Implementation
+2. Favor Object composition over inheritance 
+3. Don't overdo it, but wherever possible use delegation to overcome problems with composition
+4. Use a balance of both approaches 
+
+**Programming to an interface** 
+1. Clients don't need to know class type and underlying implementation -- just know the interface 
+2. If clients only use the interface, you can change the underlying implementation any time you want, so long as you stick to the interface. 
+
+Inheritance: simple to follow because this happens at compile time. However child sublcasses are tied to parent class. Re-write to parent class breaks child functionalities. **Overcome this by subclassing from Abstract classes**
+
+**Delegation**
+Hold a reference to composed object and allow the composed object to implement functionality.
+Cons: harder to debug and reason about.
+
+**Run Time and Compile Time structures**
+A programs compile time structure is the class and the run time aspect is the object and therefore we should think about them differently as they are independent structures.
+
+The run time interactions are more dictated by the Architect.
+
+Throw in mentions of Aggregation and Aquaintance. 
+
+## Design aspects to keep in mind 
+
+1. Don't create an object by using specific class: rather use an Interface 
+2. Avoid tightly coupled classes 
+3. Hardware dependent implementations should be avoided to favour platform independence 
+
+Choice in design pattern applicability depends on your area:
+1. Is this an Application Program
+2. Is this a toolkit 
+3. Or it this a framework 
+
+Frameworks: takes mental load off boilerplate.
+
+## Questions 
+1. Is try-catch in Java Chain of Responsibility pattern 
+2. Memory Overhead of classes and garbage collection strategies 
+3. Jax RS ? 
+4. How can you use objects to handle code pre-conditions and error handling
 
 ## References 
 1. Design Patterns - Elements of Reusable Object Oriented Software 
